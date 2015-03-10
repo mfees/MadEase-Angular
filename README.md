@@ -4,7 +4,6 @@ Virtual Closet Web App. Final Project for TIY FEE Spring 2015 Class
 ---
 
 ## User Stories
----
 
 ### Starting a profile
 
@@ -14,7 +13,6 @@ Virtual Closet Web App. Final Project for TIY FEE Spring 2015 Class
 
 
 ### Creating a closet
----
 
 #### A user can upload pictures so the closet can become full.
 
@@ -22,7 +20,6 @@ Virtual Closet Web App. Final Project for TIY FEE Spring 2015 Class
 
 
 ### Functionality
----
 
 #### A user can click a button so that the user will receive a random outfit.
 
