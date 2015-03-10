@@ -3,23 +3,23 @@ Virtual Closet Web App. Final Project for TIY FEE Spring 2015 Class
 
 ---
 
-## User Stories
+# User Stories
 
-### Starting a profile
+## Starting a profile
 
 #### A user can add their login info (to the database) so that the user can be authenticated.
 
 #### A user can edit closet options so the user can start a closet.
 
 
-### Creating a closet
+## Creating a closet
 
 #### A user can upload pictures so the closet can become full.
 
 #### A user can edit tag options so the user can put their images in categories.
 
 
-### Functionality
+## Functionality
 
 #### A user can click a button so that the user will receive a random outfit.
 
