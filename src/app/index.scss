@@ -56,27 +56,57 @@ h1 {
 }
 
 .button-container {
-    padding: 3em;
+    padding: 2em 3em;
 }
 
 .cta {
-    border-bottom: 5px solid #5a9eb1;
-    margin-bottom: 2em;
     padding: 4em;
+}
+
+.cta-icon {
+    text-align: center;
+    display: block;
+}
+
+.button-title-blue {
+    margin-bottom: 1.5em;
+    padding: 2em;
+    background-color: #5a9eb1;
+}
+
+.button-title-green {
+    margin-bottom: 1.5em;
+    padding: 2em;
+    background-color: #60b497;
+}
+
+.button-title-red {
+    margin-bottom: 1.5em;
+    padding: 2em;
+    background-color: #e45d5d;
+}
+
+.button-text {
+    color: #fff;
+    font-size: 2ex;
+    font-family: "Montserrat" sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 0.5ex;
+    text-transform: uppercase;
 }
 
 .search-cta {
     background-color: #67abbe;
+    border-bottom-color: #5a9eb1; 
 }
 
 .add-cta {
-    background-color: #67abbe;
-    border-bottom: 5px solid #5a9eb1;
+    background-color: #77bda5;
 }
 
 .favorites-cta {
-    background-color: #67abbe;
-    border-bottom: 5px solid #5a9eb1;
+    background-color: #e66c6c;
 }
 
 #page-footer {
