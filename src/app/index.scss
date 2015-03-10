@@ -19,7 +19,7 @@
 
 h1 {
     color: #2e1911;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -38,7 +38,7 @@ h1 {
 
 .text-container {
     background-color: #f2f2f3;
-    width: 95%;
+    width: 87%;
     padding-top: 1%;
     padding-bottom: 1%;
     margin: 2em auto;
@@ -46,7 +46,7 @@ h1 {
 
 .secondary-text-container {
     background-color: #fff;
-    width: 90%;
+    width: 87%;
     padding: 2em;
     margin: 2em auto;
 }
@@ -55,8 +55,13 @@ h1 {
     text-align: center;
 }
 
+.line-decoration img {
+    position: relative;
+    margin-top: -40px;
+}
+
 .button-container {
-    padding: 2em 3em;
+    padding: 2em 3em 0;
 }
 
 .cta {
@@ -69,20 +74,20 @@ h1 {
 }
 
 .button-title-blue {
-    margin-bottom: 1.5em;
-    padding: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
     background-color: #5a9eb1;
 }
 
 .button-title-green {
-    margin-bottom: 1.5em;
-    padding: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
     background-color: #60b497;
 }
 
 .button-title-red {
-    margin-bottom: 1.5em;
-    padding: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
     background-color: #e45d5d;
 }
 
