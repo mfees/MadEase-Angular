@@ -1,33 +1,64 @@
-<div class="container">
-
-    <div ng-include="'components/navbar/navbar.html'"></div>
-
-    <div class="jumbotron text-center">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">
-            <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-            Always a pleasure scaffolding your apps.
-        </p>
-        <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
-            <div class="thumbnail">
-                <img class="pull-right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
-                <div class="caption">
-                    <h3>{{awesomeThing.title}}</h3>
-                    <p>{{awesomeThing.description}}</p>
-                    <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
+<div id="main-container">
+            <nav class="mobile-nav">
+                <img class="device-logo" src="./assets/images/logo.png"/>
+<!--                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>-->
+            </nav>
+            <div class="banner">
+                <div class="tagline">
+                    <p>one less decision you have to make today</p>
                 </div>
             </div>
+            <div class="line"></div>
+            <section class="text-container">
+                <div class="secondary-text-container">
+                    <section class="text-area">
+                        <h1>Hello Beautiful!</h1>
+                        <div class="line-decoration">
+                            <img src="./assets/images/line-decoration.png">
+                        </div>
+                        <p class="main-paragraph">Hi boys. I'm Tina. I need both ears to hold up my glasses. Everything I know to be true just went out the window. I texted back a smiley face. She texted back some letters I don't understand.</p>
+                    </section>
+                    <div class="row">
+                        <section class="button-container">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="#/find-closet">
+                                <div class="cta search-cta">
+                                    <icon class="cta-icon">
+                                        <img src="./assets/images/search-icon.png">
+                                    </icon>
+                                </div>
+                                <div class="button-title-blue">
+                                    <h2 class="button-text">Find Closet</h2>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="#">
+                                <div class="cta add-cta">
+                                    <icon class="cta-icon">
+                                        <img src="./assets/images/add-icon.png">
+                                    </icon>
+                                </div>
+                                <div class="button-title-green">
+                                    <h2 class="button-text">Add Closet</h2>
+                                </div>
+                                </a>
+                            </div>  
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="#">
+                                <div class="cta favorites-cta">
+                                    <icon class="cta-icon">
+                                        <img src="./assets/images/favorite-icon.png">
+                                    </icon>
+                                </div>
+                                <div class="button-title-red">
+                                    <h2 class="button-text">Favorites</h2>
+                                </div>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>    
+            </section>
+            <div class="line"></div>
+            <footer id="page-footer">
+                <p class="copyright">© 2015 | A Maddie Fees Creation</p>
+            </footer>
         </div>
-    </div>
-
-  <hr>
-
-    <div class="footer">
-        <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
-    </div>
-
-</div>
