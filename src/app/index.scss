@@ -1,6 +1,10 @@
 // grey: #676767;
 // brown: #2e1911;
 
+a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+}
 
 .mobile-nav {
     background: #676767;
@@ -18,20 +22,18 @@
     background-position-x: 50%;
     background-position-y: 50%;
     width: 100%;
-    height: 25em;
+    height: 27em;
 }
 
 .tagline {
     height: 3em;
     background-color: rgba(103, 103, 103, 0.7);
-    position: relative;
-    top: 22em;
 }
 
 .tagline > p {
     color: #fff;
     font-family: "Caviar Dreams", sans-serif;
-    font-size: 2.5ex;
+    font-size: 2ex;
     text-align: center;
     position: relative;
     top: 50%;
@@ -133,7 +135,7 @@ h1 {
 .search-cta {
     background-color: #67abbe; 
 }
-
+    
 .search-cta:hover {
     background-color: #5a9eb1; 
 }
@@ -181,6 +183,39 @@ h1 {
   img.pull-right {
     width: 50px;
   }
+}
+
+//Media Queries
+
+
+@media screen and (max-width: 480px) {
+    .device-logo {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .device-logo {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .device-logo {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .device-logo {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .device-logo {
+        width: 18%;
+    }
 }
 // injector
 // endinjector
