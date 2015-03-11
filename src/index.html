@@ -29,9 +29,12 @@
         <!--    <div ui-view></div>-->
         <div id="main-container">
             <nav class="mobile-nav">
-                <img src="./assets/images/sm-device-header.png">
-                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                <img class="device-logo" src="./assets/images/sm-device-header.png">
+<!--                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>-->
             </nav>
+            <div class="banner">
+<!--                <img src="./assets/images/banner.jpg"/>-->
+            </div>
             <div class="line"></div>
             <section class="text-container">
                 <div class="secondary-text-container">
@@ -42,32 +45,41 @@
                         </div>
                         <p class="main-paragraph">Hi boys. I'm Tina. I need both ears to hold up my glasses. Everything I know to be true just went out the window. I texted back a smiley face. She texted back some letters I don't understand.</p>
                     </section>
-                    <section class="button-container">
-                        <div class="cta search-cta">
-                            <icon class="cta-icon">
-                                <img src="./assets/images/search-icon.png">
-                            </icon>
-                        </div>
-                        <div class="button-title-blue">
-                            <h2 class="button-text">Find Closet</h2>
-                        </div>    
-                        <div class="cta add-cta">
-                            <icon class="cta-icon">
-                                <img src="./assets/images/add-icon.png">
-                            </icon>
-                        </div>
-                        <div class="button-title-green">
-                            <h2 class="button-text">Add Closet</h2>
-                        </div>
-                        <div class="cta favorites-cta">
-                            <icon class="cta-icon">
-                                <img src="./assets/images/favorite-icon.png">
-                            </icon>
-                        </div>
-                        <div class="button-title-red">
-                            <h2 class="button-text">Favorites</h2>
-                        </div>
-                    </section>
+                    <div class="row">
+                        <section class="button-container">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="#">
+                                <div class="cta search-cta">
+                                    <icon class="cta-icon">
+                                        <img src="./assets/images/search-icon.png">
+                                    </icon>
+                                </div>
+                                <div class="button-title-blue">
+                                    <h2 class="button-text">Find Closet</h2>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="cta add-cta">
+                                    <icon class="cta-icon">
+                                        <img src="./assets/images/add-icon.png">
+                                    </icon>
+                                </div>
+                                <div class="button-title-green">
+                                    <h2 class="button-text">Add Closet</h2>
+                                </div>
+                            </div>  
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="cta favorites-cta">
+                                    <icon class="cta-icon">
+                                        <img src="./assets/images/favorite-icon.png">
+                                    </icon>
+                                </div>
+                                <div class="button-title-red">
+                                    <h2 class="button-text">Favorites</h2>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>    
             </section>
             <footer id="page-footer">
