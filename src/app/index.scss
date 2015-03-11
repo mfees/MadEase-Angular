@@ -11,6 +11,7 @@ a:hover, a:focus {
 }
 
 .device-logo {
+    width: 30%;
     padding: 1em;
     margin: 0 auto;
     display: block;
@@ -187,32 +188,19 @@ h1 {
 
 //Media Queries
 
-
-@media screen and (max-width: 480px) {
-    .device-logo {
-        width: 35%;
-    }
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
     .device-logo {
         width: 30%;
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 1200px) {
     .device-logo {
         width: 25%;
     }
 }
 
-@media screen and (max-width: 1199px) {
-    .device-logo {
-        width: 25%;
-    }
-}
-
-@media screen and (max-width: 2000px) {
+@media screen and (min-width: 2000px) {
     .device-logo {
         width: 18%;
     }
