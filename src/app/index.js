@@ -14,7 +14,19 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
         templateUrl: '../../states/search.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
-    });
+    })
+        .state('add', {
+        url: '/add-closet',
+        templateUrl: '../../states/add-closet.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    })
+        .state('favorites', {
+        url: '/favorites',
+        templateUrl: '../../states/favorites.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    });    
 
     $urlRouterProvider.otherwise('/');
   })
