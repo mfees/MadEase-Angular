@@ -6,8 +6,27 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
       .state('home', {
         url: '/',
         templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
-      });
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    })
+        .state('search', {
+        url: '/find-closet',
+        templateUrl: '../../states/search.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    })
+        .state('add', {
+        url: '/add-closet',
+        templateUrl: '../../states/add-closet.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    })
+        .state('favorites', {
+        url: '/favorites',
+        templateUrl: '../../states/favorites.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    });    
 
     $urlRouterProvider.otherwise('/');
   })
