@@ -27,7 +27,7 @@ a:hover, a:focus {
     background-position-x: 50%;
     background-position-y: 50%;
     width: 100%;
-    height: 27em;
+    height: 18em;
 }
 
 .tagline {
@@ -196,11 +196,17 @@ h1 {
     .device-logo {
         width: 20%;
     }
+    .banner {
+        height: 23em;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .device-logo {
         width: 15%;
+    }
+    .banner {
+        height: 27em;
     }
 }
 //
