@@ -1,13 +1,35 @@
 // grey: #676767;
 // brown: #2e1911;
 
-a:hover, a:focus {
-    color: inherit;
-    text-decoration: none;
-}
+
+//Login Page Styles
 
 .login-form {
     text-align: center;
+}
+
+.field-container {
+    margin-top: 3em;
+}
+
+.p-field {
+    margin-bottom: 1em;
+}
+
+.e-field {
+    margin-bottom: 1em;
+}
+
+.submit-container > button {
+    float: right;
+}
+
+
+//Home Page Styles
+
+a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
 }
 
 .mobile-nav {
@@ -188,6 +210,23 @@ h1 {
   img.pull-right {
     width: 50px;
   }
+}
+
+//My Closet Page styles
+
+.closet-container {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.individual-closet {
+    list-style: none;
+    display: inline-block;
+}
+
+.closet-button {
+    background-color: #e0c762;
+    padding: 2em;
 }
 
 //Media Queries
