@@ -214,21 +214,54 @@ h1 {
 
 //My Closet Page styles
 
+.closet-button > h3 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2ex;
+    text-transform: uppercase;
+}
+
 .closet-container {
+    text-align: center;
     padding: 0;
-    margin: 0 auto;
 }
 
 .individual-closet {
     list-style: none;
     display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 2em;
+    width: 20%;
 }
 
 .closet-button {
     background-color: #e0c762;
-    padding: 2em;
+    padding: 3em 2em;
 }
 
+.add-individual-closet {
+    list-style: none;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 2em;
+    width: 20%;
+}
+
+.add-closet-button {
+    background-color: #f2f2f3;
+    border: 2px dashed #ccc;
+    padding: 3em 2em;
+}
+
+.add-closet-button > h3 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2ex;
+    text-transform: uppercase;
+}
+    
 //Media Queries
 
 @media screen and (min-width: 768px) {
