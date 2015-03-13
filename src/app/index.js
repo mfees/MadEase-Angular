@@ -26,7 +26,13 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
         templateUrl: '../../states/favorites.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
-    });    
+    })
+        .state('login', {
+        url: '/login',
+        templateUrl: '../../states/login.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    })
 
     $urlRouterProvider.otherwise('/');
   })
