@@ -28,7 +28,11 @@
     float: right;
     margin-right: 1em;
 }
-    
+
+.submit-container:hover > a {
+    cursor: pointer;
+}
+   
 
 //Home Page Styles
 
