@@ -6,11 +6,11 @@ angular.module('madEase')
     
     this.fbLogin = Auth.fbLogin;
     
-    function LoginCtrl (this) {
-        this.userName = "";
-        
-        this.login.fbLogin() = function () {
-            this.userInfo.push({userName:this.userName})
-        }
-    };
+//    function LoginCtrl (this) {
+//        this.userName = "";
+//        
+//        this.login.fbLogin() = function () {
+//            this.userInfo.push({userName:this.userName})
+//        }
+//    };
 });
