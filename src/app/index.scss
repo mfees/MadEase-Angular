@@ -268,10 +268,13 @@ h1 {
     width: 20%;
 }
 
-.add-closet-button {
+.add-closet-btn {
     background-color: #f2f2f3;
     border: 2px dashed #ccc;
-    padding: 3em 2em;
+}
+
+a.add-closet:hover, a.add-closet:focus, a.add-closet.active {
+    border-color: #e0c762;
 }
 
 .add-closet-button > h3 {
