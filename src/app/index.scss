@@ -1,6 +1,32 @@
 // grey: #676767;
 // brown: #2e1911;
 
+//Global Styles
+
+.btn {
+    color: #676767;
+    font-family: "Montserrat" sans-serif;
+    font-size: 1.5ex;
+    text-transform: uppercase;
+    border-radius: 0%;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #e0c762;
+    border-color: #e0c762;
+}
+
+.form-control {
+    border-radius: 0%;
+}
+
+.label {
+    color: #67abbe;
+    font-family: "Montserrat" sans-serif;
+    font-size: 1.5ex;
+    text-transform: uppercase;
+}
 
 //Login Page Styles
 
