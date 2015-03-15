@@ -223,6 +223,16 @@ h1 {
 
 //My Closet Page styles
 
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    background-color: #e0c762;
+    border: none; 
+    border-radius: 0%;
+    transition: none; 
+}
+
 .closet-button > h3 {
     color: #fff;
     font-family: "Montserrat", sans-serif;
