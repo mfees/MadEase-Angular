@@ -21,6 +21,12 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
 //        controller: 'MainCtrl',
 //        controllerAs: 'main'
     })
+        .state('closets', {
+        url: '/closets',
+        templateUrl: '../../states/closets.html'
+//      controller: 'MainCtrl',
+//      controllerAs: 'main'
+    })
         .state('favorites', {
         url: '/favorites',
         templateUrl: '../../states/favorites.html'

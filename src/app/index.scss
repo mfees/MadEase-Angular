@@ -283,6 +283,49 @@ a.add-closet:hover, a.add-closet:focus, a.add-closet.active {
     font-size: 2ex;
     text-transform: uppercase;
 }
+
+//Closets Styles
+
+.shirts {
+    background-color: #67abbe;
+}
+
+.pants {
+    background-color: #77bda5;
+}
+
+.shoes {
+    background-color: #e66c6c;
+}
+
+.shirts:hover {
+    background-color: #5a9eb1;
+}
+
+.pants:hover {
+    background-color: #60b497;
+}
+
+.shoes:hover {
+    background-color: #e45d5d;
+}
+
+.accessories:hover {
+    background-color: #d4b94c;
+}
+
+.img-thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #d4b94c; 
+    border-radius: 0%;
+    transition: none;
+}
+
+.img-thumbnail > img {
+    width: 100%;
+}
     
 //Media Queries
 
