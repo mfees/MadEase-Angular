@@ -26,3 +26,9 @@ Virtual Closet Web App. Final Project for TIY FEE Spring 2015 Class
 #### A user can browse added items so a user can see individual item details.
 
 #### A user can mark an item so a user can know which items are their favorite.
+
+
+        <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+        <!-- inject:js -->
+        <!-- js files will be automaticaly insert here -->
+        <!-- endinject -->

@@ -24,6 +24,15 @@
     float: right;
 }
 
+.submit-container > a {
+    float: right;
+    margin-right: 1em;
+}
+
+.submit-container:hover > a {
+    cursor: pointer;
+}
+   
 
 //Home Page Styles
 
@@ -214,6 +223,16 @@ h1 {
 
 //My Closet Page styles
 
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    background-color: #e0c762;
+    border: none; 
+    border-radius: 0%;
+    transition: none; 
+}
+
 .closet-button > h3 {
     color: #fff;
     font-family: "Montserrat", sans-serif;
@@ -249,10 +268,13 @@ h1 {
     width: 20%;
 }
 
-.add-closet-button {
+.add-closet-btn {
     background-color: #f2f2f3;
     border: 2px dashed #ccc;
-    padding: 3em 2em;
+}
+
+a.add-closet:hover, a.add-closet:focus, a.add-closet.active {
+    border-color: #e0c762;
 }
 
 .add-closet-button > h3 {
