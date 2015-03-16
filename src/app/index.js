@@ -5,9 +5,9 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html'
-//        controller: 'MainCtrl',
-//        controllerAs: 'main'
+        templateUrl: 'app/main/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
     })
         .state('search', {
         url: '/find-closet',
@@ -76,9 +76,9 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
         
     /** Wrapper for the unauth() functionality to logout
     */
-        logout: function(){
-        auth.unauth();
-        console.log("goodbye")
+    logout: function(){
+    auth.unauth();
+    console.log("goodbye")
     },
     /** Wrapper to allow the main controller to check if a user is currently 
     * Logged in currently
@@ -88,22 +88,6 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
         return true;
       }
     },
-      
-    checkUser: 
-        auth.onAuth(function (authdUser) {
-        if (authdUser) {
-        var fbUser = auth.child('users').child(authdUser.facebook.id);    
-            
-    fbUser.update({
-        uid: authdUser.facebook.id,
-        facebook: authdUser.facebook,
-        fullName: authdUser.facebook.displayName,
-        firstName: authdUser.facebook.cachedUserProfile.first_name,
-        lastName: authdUser.facebook.cachedUserProfile.last_name,
-        avatarUrl: authdUser.facebook.cachedUserProfile.picture.data.url,
-    })
-    }
-    }),
     /**
     *Get the current user.
     */
@@ -124,15 +108,22 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
     if ( authdUser === null ){
       return null;
     }
-    console.log("This will break if you login with anything other than FB")
     /**
     * Create a reference to the users collection within Firebase
     * Then create a child of the users collection named after the
     * authdUser's Facebook ID
     */
-
+    var fbUser = auth.child('users').child(authdUser.facebook.id);           
+    
     // Update the authdUser's information in Firebase
-
+    fbUser.update({
+            uid: authdUser.facebook.id,
+            facebook: authdUser.facebook,
+            fullName: authdUser.facebook.displayName,
+            firstName: authdUser.facebook.cachedUserProfile.first_name,
+            lastName: authdUser.facebook.cachedUserProfile.last_name,
+            avatarUrl: authdUser.facebook.cachedUserProfile.picture.data.url,
+    })
 
     // Set user to the object reference of authdUser
     fbUser = $firebaseObject(auth
