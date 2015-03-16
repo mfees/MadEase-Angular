@@ -17,9 +17,9 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
     })
         .state('add', {
         url: '/add-closet',
-        templateUrl: '../../states/add-closet.html'
-//        controller: 'MainCtrl',
-//        controllerAs: 'main'
+        templateUrl: '../../states/add-closet.html',
+        controller: 'addCtrl',
+        controllerAs: 'add'
     })
         .state('closets', {
         url: '/closets',
