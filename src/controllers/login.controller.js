@@ -10,5 +10,4 @@ angular.module('madEase')
         self.user = user;
         
     });
-    console.log(self.user.fullName)
 });
