@@ -27,6 +27,31 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
 //      controller: 'MainCtrl',
 //      controllerAs: 'main'
     })
+            .state('closets.shirts', {
+            url: '/shirt-form',
+            templateUrl: '../../states/shirt-form.html'
+    //        controller: 'MainCtrl',
+    //        controllerAs: 'main'
+        })
+            .state('closets.pants', {
+            url: '/pant-form',
+            templateUrl: '../../states/pant-form.html'
+    //        controller: 'MainCtrl',
+    //        controllerAs: 'main'
+        })
+            .state('closets.shoes', {
+            url: '/shoe-form',
+            templateUrl: '../../states/shoe-form.html'
+    //        controller: 'MainCtrl',
+    //        controllerAs: 'main'
+        })
+            .state('closets.access', {
+            url: '/access-form',
+            templateUrl: '../../states/access-form.html'
+    //        controller: 'MainCtrl',
+    //        controllerAs: 'main'
+        })
+        
         .state('favorites', {
         url: '/favorites',
         templateUrl: '../../states/favorites.html'
