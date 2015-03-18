@@ -1,7 +1,7 @@
 'use strict';
 
 var app = angular.module('madEase')
-  app.controller('addCtrl', function ($firebaseArray, $firebaseObject, Auth) {
+  app.controller('addCtrl', function ($firebaseArray, $firebaseObject, Auth, $state) {
     var self = this;
     Auth.onAuth(function(user, authdUser){
         self.user = user;
@@ -37,12 +37,18 @@ var app = angular.module('madEase')
             }]
         }
     };
+
       
-    this.pants = this.newCloset.content.pants;
-    console.log(this.pants);  
+//    this.pants = this.newCloset.content.pants;
+//    console.log(this.pants);  
+//      
+//    this.addCloset = function(closetName) {
+//        this.myCloset.child(closetName).$add({test: hello});
+//    };  
       
     this.addCloset = function(c) {
         this.myCloset.$add(c);
+        $state.go("search");
         return this.newCloset = {
             closetTitle: "",
             subhead: "",
