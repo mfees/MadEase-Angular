@@ -280,9 +280,17 @@ h1 {
     padding: 4px;
     margin-bottom: 20px;
     background-color: #e0c762;
-    border: none; 
+    border: 3px solid #e0c762; 
     border-radius: 0%;
     transition: none; 
+}
+
+.clothing-thumbnail {
+    border: none;
+}
+
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+  border-color: #d4b94c;
 }
 
 .closet-button > h3 {
