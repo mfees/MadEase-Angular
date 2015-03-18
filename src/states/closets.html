@@ -6,38 +6,86 @@
             <img src="./assets/images/line-decoration.png">
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3" ng-click="shirt=!shirt">
                 <a href="#" class="thumbnail shirts">
                     <img src="../assets/images/shirts.png" alt="...">
                 </a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3" ng-click="pants=!pants">
                 <a href="#" class="thumbnail pants">
                     <img src="../assets/images/pants.png" alt="...">
                 </a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3" ng-click="shoes=!shoes">
                 <a href="#" class="thumbnail shoes">
                     <img src="../assets/images/shoes.png" alt="...">
                 </a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3" ng-click="accessories=!accessories">
                 <a href="#/add-closet" class="thumbnail accessories">
                     <img src="../assets/images/accessories.png" alt="...">
                 </a>
             </div>
         </div>
-        <hr>
         <section class="text-area">
-            <p class="main-paragraph">Hi boys. I'm Tina. I need both ears to hold up my glasses. Everything I know to be true just went out the window. I texted back a smiley face. She texted back some letters I don't understand.</p>
+            <p class="main-paragraph">Select a category you would like to add too. Then use the upload form provided to add your clothing articles to the specific categories.</p>
         </section>
-        <form ng-submit="add.addCloset(add.newCloset)">
+        <hr>
+        <form ng-show="shirt" ng-submit="add.addCloset(add.newCloset)">
             <div class="form-group">
-                <label for="exampleInputEmail1">Clothing Article Name</label>
+                <label for="exampleInputEmail1">Shirt Title</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title" ng-model="add.pants.title">
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Subhead</label>
+                <label for="exampleInputPassword1">Description</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter subhead" ng-model="add.pants.subhead">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Upload a cover photo for your closet</p>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <form ng-show="pants" ng-submit="add.addCloset(add.newCloset)">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Pants Title</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title" ng-model="add.pants.title">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Description</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter subhead" ng-model="add.pants.subhead">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Upload a cover photo for your closet</p>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <form ng-show="shoes" ng-submit="add.addCloset(add.newCloset)">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Shoe Title</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title" ng-model="add.pants.title">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Description</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter subhead" ng-model="add.pants.subhead">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Upload a cover photo for your closet</p>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <form ng-show="accessories" ng-submit="add.addCloset(add.newCloset)">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Accessory Title</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title" ng-model="add.pants.title">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Description</label>
                 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter subhead" ng-model="add.pants.subhead">
             </div>
             <div class="form-group">
