@@ -8,12 +8,29 @@ var app = angular.module('madEase')
         
     });  
       console.log(self.user);
-    var ref = new Firebase('https://madease.firebaseio.com/closets/' + self.user.$id + '/' + $stateParams.closetId + '/content/shirts');
-    this.shirt = $firebaseObject(ref);  
+    this.ref = new Firebase('https://madease.firebaseio.com/closets/' + self.user.$id + '/' + $stateParams.closetId + '/content/shirts');
+    this.shirt = $firebaseObject(this.ref);  
+       
       
     this.shirt.$loaded().then(function(data, key){
           console.log(data.shirts)
+          console.log(self.shirt)
       }) 
+    
+        this.newShirt = {
+            title: "",
+            subhead: "",
+            image: ""
+        }; 
+      
+        this.addShirt = function(newshirt) {
+        self.ref.push(newshirt);
+        return self.newShirt = {
+            title: "",
+            subhead: "",
+            image: ""
+        };;
+    };
 });
 
 
