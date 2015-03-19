@@ -1,10 +1,12 @@
 <section class="text-container">
     <div class="secondary-text-container">
         <a class="btn btn-default" ui-sref="search" role="button">Back to My Closets</a>
-        <h1>{{closetTitle}}</h1>
+        <h1>{{closet.info.closetTitle}}</h1>
         <div class="line-decoration">
             <img src="./assets/images/line-decoration.png">
         </div>
+<!--        ({closetId: closet.myCloset.$id})-->
+<!--        closets({userId: closet.myCloset.$id, closetId: closet.myCloset.$id})-->
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <a ui-sref="closets.shirts" class="clothing-thumbnail thumbnail shirts">
@@ -32,15 +34,6 @@
         </section>
         <hr>
         <div ui-view></div><!--view for upload forms-->
-        <hr>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a href="#" class="img-thumbnail">
-                    <img src="http://shutupandtakemymoney.com/wp-content/uploads/2013/12/cat-hair-is-lonely-people-glitter-shirt.jpg" alt="...">
-                </a>
-                <h4>Article Name</h4>
-            </div>
-        </div>
     </div>
 </section> 
 

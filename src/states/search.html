@@ -5,7 +5,16 @@
         <div class="line-decoration">
             <img src="./assets/images/line-decoration.png">
         </div>
+<!--        ng-repeat="closet in closet.closets"-->
+        <!-- ui-sref="closets.whateverform({closetId: closet.$id})" -->
         <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="closets in search.search">
+                <a ui-sref="closets({userId: search.user.$id, closetId: closets.$id})" class="thumbnail">
+                    <img src="../assets/images/default-closet.png" alt="...">
+                    <h3>{{closets.closetTitle}}</h3>
+                </a>
+            </div>
+<!--
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <a href="#/closets" class="thumbnail">
                     <img src="../assets/images/default-closet.png" alt="...">
@@ -16,11 +25,7 @@
                     <img src="../assets/images/default-closet.png" alt="...">
                 </a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a href="#/closets" class="thumbnail">
-                    <img src="../assets/images/default-closet.png" alt="...">
-                </a>
-            </div>
+-->
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <a href="#/add-closet" class="add-closet-btn thumbnail">
                     <img src="../assets/images/add-closet.png" alt="...">

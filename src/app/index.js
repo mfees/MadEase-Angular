@@ -11,9 +11,9 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
     })
         .state('search', {
         url: '/find-closet',
-        templateUrl: '../../states/search.html'
-//        controller: 'MainCtrl',
-//        controllerAs: 'main'
+        templateUrl: '../../states/search.html',
+        controller: 'SearchCtrl',
+        controllerAs: 'search'
     })
         .state('add', {
         url: '/add-closet',
@@ -22,22 +22,22 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
         controllerAs: 'add'
     })
         .state('closets', {
-        url: '/closets',
-        templateUrl: '../../states/closets.html'
-//      controller: 'MainCtrl',
-//      controllerAs: 'main'
+        url: '/closets/:userId/:closetId',
+        templateUrl: '../../states/closets.html',
+        controller: 'ClosetCtrl',
+        controllerAs: 'closet'
     })
             .state('closets.shirts', {
-            url: '/shirt-form',
-            templateUrl: '../../states/shirt-form.html'
-    //        controller: 'MainCtrl',
-    //        controllerAs: 'main'
+            url: '/:id/:closetId/shirt-form',
+            templateUrl: '../../states/shirt-form.html',
+            controller: 'ShirtCtrl',
+            controllerAs: 'shirt'
         })
             .state('closets.pants', {
             url: '/pant-form',
-            templateUrl: '../../states/pant-form.html'
-    //        controller: 'MainCtrl',
-    //        controllerAs: 'main'
+            templateUrl: '../../states/pant-form.html',
+            controller: 'ClosetCtrl',
+            controllerAs: 'closet'
         })
             .state('closets.shoes', {
             url: '/shoe-form',

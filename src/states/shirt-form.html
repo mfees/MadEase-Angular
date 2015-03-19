@@ -1,4 +1,6 @@
 <form ng-submit="add.addCloset(add.newCloset)">
+    <h2>hey{{shirt.shirt}}</h2>
+    <p>heyyy{{shirt.shirt.title}}</p>
     <div class="form-group">
         <label for="exampleInputEmail1">Shirt Title</label>
         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title" ng-model="add.pants.title">
@@ -14,3 +16,12 @@
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
+<hr>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="shirts in shirt.shirt">
+        <a href="#" class="img-thumbnail">
+            <img src="http://shutupandtakemymoney.com/wp-content/uploads/2013/12/cat-hair-is-lonely-people-glitter-shirt.jpg" alt="...">
+        </a>
+        <h4>{{shirt.shirt[0].title}}</h4>
+    </div>
+</div>
