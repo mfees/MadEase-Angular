@@ -34,10 +34,10 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
             controllerAs: 'shirt'
         })
             .state('closets.pants', {
-            url: '/pant-form',
+            url: '/:id/:closetId/pant-form',
             templateUrl: '../../states/pant-form.html',
-            controller: 'ClosetCtrl',
-            controllerAs: 'closet'
+            controller: 'PantsCtrl',
+            controllerAs: 'pants'
         })
             .state('closets.shoes', {
             url: '/shoe-form',
