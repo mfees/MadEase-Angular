@@ -175,7 +175,7 @@ h1 {
 .secondary-text-container {
     background-color: #fff;
     width: 87%;
-    padding: 2em;
+    padding: 2em 2em 0 2em;
     margin: 0 auto;
 }
 
@@ -196,7 +196,7 @@ h1 {
 }
 
 .cta {
-    padding: 4em;
+    padding: 6em;
 }
 
 .cta-icon {
@@ -239,6 +239,9 @@ h1 {
 }
 
 .recent-cta {
+    background-image: url(../assets/images/recent-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #e0c762;
 }
 
@@ -247,6 +250,9 @@ h1 {
 }
 
 .search-cta {
+    background-image: url(../assets/images/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #67abbe; 
 }
     
@@ -255,6 +261,9 @@ h1 {
 }
 
 .add-cta {
+    background-image: url(../assets/images/add-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #77bda5;
 }
 
@@ -263,6 +272,9 @@ h1 {
 }
 
 .favorites-cta {
+    background-image: url(../assets/images/favorite-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #e66c6c;
 }
 
