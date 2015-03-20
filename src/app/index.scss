@@ -275,14 +275,30 @@ h1 {
 
 //My Closet Page styles
 
+.search-title {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2ex;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+}
+
+.default-pic {
+    margin-top: 2em;
+}
+
 .thumbnail {
+    background-image: url(../assets/images/default-closet.png);
     display: block;
-    padding: 4px;
-    margin-bottom: 20px;
+    padding: 2em;
+    margin-bottom: 2em;
     background-color: #e0c762;
-    border: 3px solid #e0c762; 
+    border: 3px solid #e0c762;
     border-radius: 0%;
-    transition: none; 
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: none;
 }
 
 .clothing-thumbnail {
@@ -329,6 +345,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
 .add-closet-btn {
+    background-image: url(../assets/images/add-closet.png);
     background-color: #f2f2f3;
     border: 2px dashed #ccc;
 }
@@ -347,15 +364,22 @@ a.add-closet:hover, a.add-closet:focus, a.add-closet.active {
 //Closets Styles
 
 .shirts {
+    background-image: url(../assets/images/shirts.png);
     background-color: #67abbe;
 }
 
 .pants {
+    background-image: url(../assets/images/pants.png);
     background-color: #77bda5;
 }
 
 .shoes {
+    background-image: url(../assets/images/shoes.png);
     background-color: #e66c6c;
+}
+
+.accessories {
+    background-image: url(../assets/images/accessories.png);
 }
 
 .shirts:hover {

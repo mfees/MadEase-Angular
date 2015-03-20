@@ -10,9 +10,10 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="closets in search.search">
                 <a ui-sref="closets({userId: search.user.$id, closetId: closets.$id})" class="thumbnail">
-                    <img src="../assets/images/default-closet.png" alt="...">
-                    <h3>{{closets.closetTitle}}</h3>
+                    <h3 class="search-title">{{closets.closetTitle}}</h3>
+<!--                    <img src="../assets/images/default-closet.png" alt="..." class="default-pic">-->
                 </a>
+                
             </div>
 <!--
             <div class="col-xs-12 col-sm-6 col-md-3">
@@ -28,7 +29,7 @@
 -->
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <a href="#/add-closet" class="add-closet-btn thumbnail">
-                    <img src="../assets/images/add-closet.png" alt="...">
+<!--                    <img src="../assets/images/add-closet.png" alt="...">-->
                 </a>
             </div>
         </div>
