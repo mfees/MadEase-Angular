@@ -54,6 +54,15 @@
     display: inline-block;
 }
 
+.clothing-title {
+    color: #2e1911;
+    font-family: "Montserrat" sans-serif;
+    font-size: 2ex;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
 //Login Page Styles
 
 .login-form {
@@ -180,7 +189,10 @@ h1 {
 }
 
 .button-container {
-    padding: 2em 3em 0;
+    padding: 0;
+    margin-top: 2em;
+    list-style: none;
+    overflow: hidden;
 }
 
 .cta {
@@ -190,6 +202,12 @@ h1 {
 .cta-icon {
     text-align: center;
     display: block;
+}
+
+.button-title-yellow {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #d4b94c;
 }
 
 .button-title-blue {
@@ -218,6 +236,14 @@ h1 {
     text-align: center;
     letter-spacing: 0.5ex;
     text-transform: uppercase;
+}
+
+.recent-cta {
+    background-color: #e0c762;
+}
+
+.recent-cta:hover {
+    background-color: #d4b94c; 
 }
 
 .search-cta {
