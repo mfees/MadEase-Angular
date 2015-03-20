@@ -1,11 +1,11 @@
-<form ng-submit="add.addCloset(add.newCloset)" id="access">
+<form ng-submit="accessories.addAccessories(accessories.newAccessories)" id="access">
     <div class="form-group">
         <label for="exampleInputEmail1">Accessory Title</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title" ng-model="add.pants.title">
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title" ng-model="accessories.newAccessories.title">
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Description</label>
-        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter subhead" ng-model="add.pants.subhead">
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter subhead" ng-model="accessories.newAccessories.subhead">
     </div>
     <div class="form-group">
         <label for="exampleInputFile">File input</label>
@@ -15,10 +15,10 @@
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
 <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="accessories in accessories.accessories">
         <a href="#" class="img-thumbnail">
             <img src="http://shutupandtakemymoney.com/wp-content/uploads/2013/12/cat-hair-is-lonely-people-glitter-shirt.jpg" alt="...">
         </a>
-        <h4>Article Name</h4>
+        <h4>{{accessories.title}}</h4>
     </div>
 </div>

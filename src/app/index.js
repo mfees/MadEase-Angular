@@ -40,16 +40,16 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
             controllerAs: 'pants'
         })
             .state('closets.shoes', {
-            url: '/shoe-form',
-            templateUrl: '../../states/shoe-form.html'
-    //        controller: 'MainCtrl',
-    //        controllerAs: 'main'
+            url: '/:id/:closetId/shoe-form',
+            templateUrl: '../../states/shoe-form.html',
+            controller: 'ShoesCtrl',
+            controllerAs: 'shoes'
         })
             .state('closets.access', {
-            url: '/access-form',
-            templateUrl: '../../states/access-form.html'
-    //        controller: 'MainCtrl',
-    //        controllerAs: 'main'
+            url: '/:id/:closetId/access-form',
+            templateUrl: '../../states/access-form.html',
+            controller: 'AccessoriesCtrl',
+            controllerAs: 'accessories'
         })
         
         .state('favorites', {
