@@ -8,11 +8,22 @@ var app = angular.module('madEase')
         
     }); 
       
+    this.newAccessories = {
+        title: "",
+        subhead: "",
+        image: ""
+    };
+      
     document.getElementById("upload_widget_opener").addEventListener("click", function() {
 
-    cloudinary.openUploadWidget({ cloud_name: 'madease', upload_preset: 'ejxt3qdf'}, 
-    function(error, result) { console.log(error, result) });
-
+    cloudinary.openUploadWidget({
+        cloud_name: 'madease', upload_preset: 'ejxt3qdf'
+        }, 
+                                
+        function(error, result) { 
+            console.log(result[0].url) 
+            return self.newAccessories.image = result[0].url
+        });
     }, false);
       
     console.log(self.user);
@@ -24,12 +35,6 @@ var app = angular.module('madEase')
           console.log(data.accessories)
           console.log(self.accessories)
       }) 
-    
-        this.newAccessories = {
-            title: "",
-            subhead: "",
-            image: ""
-        }; 
       
         this.addAccessories = function(accessories) {
         self.ref.push(accessories);

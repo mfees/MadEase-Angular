@@ -8,11 +8,11 @@ var app = angular.module('madEase')
         
     }); 
       
-       this.newShirt = {
-            title: "",
-            subhead: "",
-            image: ""
-        };
+    this.newShirt = {
+        title: "",
+        subhead: "",
+        image: ""
+    };
       
     document.getElementById("upload_widget_opener").addEventListener("click", function() {
 
@@ -36,8 +36,6 @@ var app = angular.module('madEase')
           console.log(self.shirt)
       }) 
     
-        
-      
         this.addShirt = function(newshirt) {
         self.ref.push(newshirt);
         return self.newShirt = {
@@ -47,6 +45,3 @@ var app = angular.module('madEase')
         };;
     };
 });
-
-
-//https://madease.firebaseio.com/closets/10153176300256303/-JkiCn2pNeiPzVu36s7y/content
