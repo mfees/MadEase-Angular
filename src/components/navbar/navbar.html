@@ -2,8 +2,9 @@
     <a ui-sref="home"><img class="device-logo" src="./assets/images/logo.png"/></a>
 <!--    <div class="user-info-container">-->
         <div class="user-info-position">
-            <p class="user-info">Welcome Back, <br />{{nav.user.firstName}}!</p>
-            <img class="user-pic" ng-src="{{nav.user.avatarUrl}}"/><br />
+            <img class="user-pic" ng-src="{{nav.user.avatarUrl}}"/>
+            <p class="user-info">Hey {{nav.user.firstName}}!</p>
+            <button type="button" class="btn btn-danger logout-btn" ui-sref="login">Logout</button>
         </div>
 <!--    </div>    -->
 </nav>
