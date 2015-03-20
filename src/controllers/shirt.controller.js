@@ -6,8 +6,27 @@ var app = angular.module('madEase')
     Auth.onAuth(function(user, authdUser){
         self.user = user;
         
-    });  
-      console.log(self.user);
+    }); 
+      
+       this.newShirt = {
+            title: "",
+            subhead: "",
+            image: ""
+        };
+      
+    document.getElementById("upload_widget_opener").addEventListener("click", function() {
+
+    cloudinary.openUploadWidget({
+        cloud_name: 'madease', upload_preset: 'ejxt3qdf'
+        }, 
+                                
+        function(error, result) { 
+            console.log(result[0].url) 
+            return self.newShirt.image = result[0].url
+        });
+    }, false);
+      
+    console.log(self.user);
     this.ref = new Firebase('https://madease.firebaseio.com/closets/' + self.user.$id + '/' + $stateParams.closetId + '/content/shirts');
     this.shirt = $firebaseObject(this.ref);  
        
@@ -17,11 +36,7 @@ var app = angular.module('madEase')
           console.log(self.shirt)
       }) 
     
-        this.newShirt = {
-            title: "",
-            subhead: "",
-            image: ""
-        }; 
+        
       
         this.addShirt = function(newshirt) {
         self.ref.push(newshirt);

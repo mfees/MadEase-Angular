@@ -15,7 +15,7 @@ var app = angular.module('madEase')
 
     }, false);  
       
-      console.log(self.user);
+    console.log(self.user);
     this.closet = new Firebase('https://madease.firebaseio.com/closets/' + self.user.$id);
     this.myCloset = $firebaseObject(this.closet); 
         

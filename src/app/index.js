@@ -103,6 +103,7 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
     */
     logout: function(){
     auth.unauth();
+    $state.go("login");    
     console.log("goodbye")
     },
     /** Wrapper to allow the main controller to check if a user is currently 
