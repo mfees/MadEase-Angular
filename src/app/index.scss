@@ -64,7 +64,8 @@
 .label-text {
     color: #2e1911;
     font-family: "Montserrat", sans-serif;
-    font-size: 2ex;
+    font-size: 1.8ex;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -193,6 +194,16 @@ h1 {
     text-transform: uppercase;
     border-bottom: 1px solid #eaebee;
     padding-bottom: 2.5ex;
+}
+
+h3 {
+    color: #2e1911;
+    font-size: 2.5ex;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .main-paragraph {
