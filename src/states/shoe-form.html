@@ -1,19 +1,20 @@
 <form ng-submit="shoes.addShoes(shoes.newShoes)">
     <div class="form-group">
-        <input ng-model="shoes.newShoes.image" value="{{shoes.newShoes.image}}">
-        <a class="btn btn-primary"id="upload_widget_opener">Upload Image</a>
-        <label for="exampleInputFile">While you wait, give your shoes some details!</label>
+        <a class="btn upload-btn"id="upload_widget_opener">Upload Image</a>
+        <input ng-model="shoes.newShoes.image" value="{{shoes.newShoes.image}}" placeholder="Image will go here">
+        <label class="upload-label" for="exampleInputFile">While you wait for your image to upload above, give your shirt some details below!</label>
     </div>
     <div class="form-group">
-        <label for="exampleInputEmail1">Shoe Title</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title" ng-model="shoes.newShoes.title">
+        <label class="label-text" for="exampleInputEmail1">Shoe Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Shoe Name" ng-model="shoes.newShoes.title">
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Description</label>
-        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter subhead" ng-model="shoes.newShoes.subhead">
+        <label class="label-text" for="exampleInputPassword1">Description</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Shoe Description" ng-model="shoes.newShoes.subhead">
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
+<hr>
 <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="shoes in shoes.shoes">
         <a href="#" class="img-thumbnail">

@@ -1,12 +1,12 @@
 <form ng-submit="shirt.addShirt(shirt.newShirt)">
     <div class="form-group">
         <a class="btn upload-btn"id="upload_widget_opener">Upload Image</a>
-        <input ng-model="shirt.newShirt.image" value="{{shirt.newShirt.image}}" placeholder="While you wait for your image to upload, give your shirt some details below!">
-        <label class="upload-label" for="exampleInputFile">While you wait for your image to upload, give your shirt some details below!</label>
+        <input ng-model="shirt.newShirt.image" value="{{shirt.newShirt.image}}" placeholder="Image will go here">
+        <label class="upload-label" for="exampleInputFile">While you wait for your image to upload above, give your shirt some details below!</label>
     </div>
     <div class="form-group">
-        <label class="label-text" for="exampleInputEmail1">Shirt Title</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Shirt Title" ng-model="shirt.newShirt.title">
+        <label class="label-text" for="exampleInputEmail1">Shirt Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Shirt Name" ng-model="shirt.newShirt.title">
     </div>
     <div class="form-group">
         <label class="label-text" for="exampleInputPassword1">Description</label>
