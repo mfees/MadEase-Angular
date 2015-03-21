@@ -41,6 +41,33 @@
     text-transform: uppercase;
 }
 
+.upload-btn {
+    color: #fff;
+    background-color: #77bda5;
+    border: none;
+}
+
+.upload-btn:hover {
+    color: #fff;
+    background-color: #60b497;
+}
+
+.upload-label {
+    color: #2e1911;
+    font-family: "Caviar Dreams", sans-serif;
+    font-size: 2ex;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.label-text {
+    color: #2e1911;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2ex;
+    text-transform: uppercase;
+}
+
 //.user-info-container {
 //    padding: 0 2em;
 //}
@@ -454,7 +481,7 @@ a.add-closet:hover, a.add-closet:focus, a.add-closet.active {
     display: block;
     padding: 4px;
     margin-bottom: 20px;
-    border: 1px solid #d4b94c; 
+    border: 3px solid #d4b94c; 
     border-radius: 0%;
     transition: none;
 }
