@@ -121,18 +121,28 @@
 .e-field {
     margin-bottom: 1em;
 }
+.submit-container {
+    overflow: hidden;
+    text-align: center;
+    margin-top: 2em;
+}
 
 .submit-container > button {
     float: right;
 }
 
 .submit-container > a {
-    float: right;
-    margin-right: 1em;
 }
 
 .submit-container:hover > a {
     cursor: pointer;
+}
+
+.secondary-text-container-login {
+    background-color: #fff;
+    width: 87%;
+    padding: 2em;
+    margin: 0 auto;
 }
    
 
