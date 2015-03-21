@@ -1,0 +1,34 @@
+<section class="text-container">
+    <div class="secondary-text-container">
+        <a class="btn btn-default" ui-sref="search" role="button">Back to My Closets</a>
+        <h1>{{closet.info.closetTitle}}</h1>
+        <div class="line-decoration">
+            <img src="./assets/images/line-decoration.png">
+        </div>
+<!--        ({closetId: closet.myCloset.$id})-->
+<!--        closets({userId: closet.myCloset.$id, closetId: closet.myCloset.$id})-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a ui-sref="closets.shirts" class="clothing-thumbnail thumbnail shirts">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a ui-sref="closets.pants" class="clothing-thumbnail thumbnail pants">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a ui-sref="closets.shoes" class="clothing-thumbnail thumbnail shoes">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a ui-sref="closets.access" href="#access" class="clothing-thumbnail thumbnail accessories">
+                </a>
+            </div>
+        </div>
+        <section class="text-area">
+            <p class="main-paragraph">Select a category you would like to add too. Then use the upload form provided to add your clothing articles to the specific categories.</p>
+        </section>
+        <hr>
+        <div ui-view></div><!--view for upload forms-->
+    </div>
+</section>

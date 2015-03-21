@@ -1,62 +1,25 @@
 <section class="text-container">
     <div class="secondary-text-container">
+        <a class="btn btn-default" ui-sref="home" role="button">Home</a>
         <h1>My Closets</h1>
         <div class="line-decoration">
             <img src="./assets/images/line-decoration.png">
         </div>
+<!--        ng-repeat="closet in closet.closets"-->
+        <!-- ui-sref="closets.whateverform({closetId: closet.$id})" -->
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="../assets/images/default-closet.png" alt="...">
+            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="closets in search.search">
+                <a ui-sref="closets({userId: search.user.$id, closetId: closets.$id})" class="thumbnail">
+                    <h3 class="search-title">{{closets.closetTitle}}</h3>
+<!--                    <img src="../assets/images/default-closet.png" alt="..." class="default-pic">-->
                 </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="../assets/images/default-closet.png" alt="...">
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="../assets/images/default-closet.png" alt="...">
-                </a>
+                
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <a href="#/add-closet" class="add-closet-btn thumbnail">
-                    <img src="../assets/images/add-closet.png" alt="...">
+<!--                    <img src="../assets/images/add-closet.png" alt="...">-->
                 </a>
             </div>
         </div>
-<!--
-        <ul class="closet-container">
-            <li class="individual-closet">
-                <a href="#">
-                    <div class="closet-button">
-                        <h3>Title Goes</h3>
-                    </div>
-                </a>    
-            </li>
-            <li class="individual-closet">
-                <a href="#">
-                    <div class="closet-button">
-                        <h3>Title Goes Here</h3>
-                    </div>
-                </a>    
-            </li>
-            <li class="individual-closet">
-                <a href="#">
-                    <div class="closet-button">
-                        <h3>Title Goes Here</h3>
-                    </div>
-                </a>
-            </li>
-            <li class="add-individual-closet">
-                <a href="#">
-                    <div class="add-closet-button">
-                        <img src="./assets/images/add-icon.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
--->
     </div>
 </section> 

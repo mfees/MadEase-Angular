@@ -6,6 +6,11 @@ angular.module('madEase')
     
     this.fbLogin = Auth.fbLogin;
     
+    Auth.onAuth(function(user, authdUser){
+        self.user = user;
+        
+    });
+    console.log(self.user.fullName)
 //    function LoginCtrl (this) {
 //        this.userName = "";
 //        

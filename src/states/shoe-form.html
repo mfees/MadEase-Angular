@@ -1,0 +1,29 @@
+<h3>Shoes</h3>
+<form ng-submit="shoes.addShoes(shoes.newShoes)">
+    <div class="form-group">
+        <a class="btn upload-btn"id="upload_widget_opener">Upload Image</a>
+        <input ng-model="shoes.newShoes.image" value="{{shoes.newShoes.image}}" placeholder="Image will go here">
+        <label class="upload-label" for="exampleInputFile">While you wait for your image to upload above, give your shirt some details below!</label>
+    </div>
+    <div class="form-group">
+        <label class="label-text" for="exampleInputEmail1">Shoe Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name" ng-model="shoes.newShoes.title">
+    </div>
+    <div class="form-group">
+        <label class="label-text" for="exampleInputPassword1">Description</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Description" ng-model="shoes.newShoes.subhead">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<hr>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="shoes in shoes.shoes">
+        <a href="#" class="img-thumbnail">
+            <img ng-src="{{shoes.image}}" alt="...">
+        </a>
+        <div class="clothing-info-container">
+            <h4 class="clothing-title">{{shoes.title}}</h4>
+            <p class="main-paragraph">{{shoes.subhead}}</p>
+        </div>
+    </div>
+</div>

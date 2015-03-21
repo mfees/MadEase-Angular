@@ -5,4 +5,9 @@ angular.module('madEase')
     var userInfo = new Firebase('https://madease.firebaseio.com');
     
     this.fbLogin = Auth.fbLogin;
+    
+    Auth.onAuth(function(user, authdUser){
+        self.user = user;
+        
+    });
 });
