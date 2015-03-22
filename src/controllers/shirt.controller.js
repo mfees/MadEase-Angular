@@ -28,7 +28,14 @@ var app = angular.module('madEase')
       
     console.log(self.user);
     this.ref = new Firebase('https://madease.firebaseio.com/closets/' + self.user.$id + '/' + $stateParams.closetId + '/content/shirts');
-    this.shirt = $firebaseObject(this.ref);  
+    this.shirt = $firebaseObject(this.ref); 
+    
+//    var ref = new Firebase('https://madease.firebaseio.com/closets/' + self.user.$id + '/' + $stateParams.closetId + '/content/shirts');  
+//    ref.orderByValue().limitToLast(4).on("value", function(snapshot) {
+//        snapshot.forEach(function(data) {
+//        console.log("The " + data.key() + " dinosaur's score is " + data.val());
+//      });
+//    });  
        
       
     this.shirt.$loaded().then(function(data, key){
