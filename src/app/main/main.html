@@ -12,10 +12,10 @@
             </div>
             <p class="main-paragraph">We at MadEase know how difficult finding the perfect outfit can be, so we wanted to make it a little easier for you. Take a tour through your closets and all of the clothing you own by starting your first closet today!</p>
         </section>
-        <div class="row">
+        <div class="row"> 
             <ul class="button-container">
                 <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a ui-sref="favorites">
+                    <a ui-sref="closets({userId: main.user.$id, closetId: main.recent[0].$id})">
                     <div class="cta recent-cta"></div>
                         <div class="button-title-yellow">
                             <h2 class="button-text">Recent Closet</h2>
