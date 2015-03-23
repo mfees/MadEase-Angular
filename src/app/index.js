@@ -11,56 +11,56 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
     })
         .state('search', {
         url: '/find-closet',
-        templateUrl: 'states/search.html',
+        templateUrl: 'app/states/search.html',
         controller: 'SearchCtrl',
         controllerAs: 'search'
     })
         .state('add', {
         url: '/add-closet',
-        templateUrl: 'states/add-closet.html',
+        templateUrl: 'app/states/add-closet.html',
         controller: 'addCtrl',
         controllerAs: 'add'
     })
         .state('closets', {
         url: '/closets/:userId/:closetId',
-        templateUrl: 'states/closets.html',
+        templateUrl: 'app/states/closets.html',
         controller: 'ClosetCtrl',
         controllerAs: 'closet'
     })
             .state('closets.shirts', {
             url: '/:id/:closetId/shirt-form',
-            templateUrl: 'states/shirt-form.html',
+            templateUrl: 'app/states/shirt-form.html',
             controller: 'ShirtCtrl',
             controllerAs: 'shirt'
         })
             .state('closets.pants', {
             url: '/:id/:closetId/pant-form',
-            templateUrl: 'states/pant-form.html',
+            templateUrl: 'app/states/pant-form.html',
             controller: 'PantsCtrl',
             controllerAs: 'pants'
         })
             .state('closets.shoes', {
             url: '/:id/:closetId/shoe-form',
-            templateUrl: 'states/shoe-form.html',
+            templateUrl: 'app/states/shoe-form.html',
             controller: 'ShoesCtrl',
             controllerAs: 'shoes'
         })
             .state('closets.access', {
             url: '/:id/:closetId/access-form',
-            templateUrl: 'states/access-form.html',
+            templateUrl: 'app/states/access-form.html',
             controller: 'AccessoriesCtrl',
             controllerAs: 'accessories'
         })
         
         .state('favorites', {
         url: '/favorites',
-        templateUrl: 'states/favorites.html'
+        templateUrl: 'app/states/favorites.html'
 //        controller: 'MainCtrl',
 //        controllerAs: 'main'
     })
         .state('login', {
         url: '/login',
-        templateUrl: 'states/login.html',
+        templateUrl: 'app/states/login.html',
         controller: 'LoginCtrl',
         controllerAs: 'login'
     })
