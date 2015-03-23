@@ -28,7 +28,30 @@ Virtual Closet Web App. Final Project for TIY FEE Spring 2015 Class
 #### A user can mark an item so a user can know which items are their favorite.
 
 
-        <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
-        <!-- inject:js -->
-        <!-- js files will be automaticaly insert here -->
-        <!-- endinject -->
+        
+        
+            <script src="app/index.js"></script>
+            <script src="controllers/login.controller.js"></script>
+            <script src="app/main/main.controller.js"></script>
+            <script src="components/navbar/navbar.controller.js"></script>
+            <script src="controllers/add.closet.controller.js"></script>
+            <script src="controllers/closets.controller.js"></script>
+            <script src="controllers/shirt.controller.js"></script>
+            <script src="controllers/search.controller.js"></script>
+            <script src="controllers/pant.controller.js"></script>
+            <script src="controllers/shoe.controller.js"></script>
+            <script src="controllers/accessories.controller.js"></script>    
+            
+            
+            
+            <script src="../bower_components/jquery/dist/jquery.js"></script>
+            <script src="../bower_components/angular/angular.js"></script>
+            <script src="../bower_components/angular-animate/angular-animate.js"></script>
+            <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+            <script src="../bower_components/angular-touch/angular-touch.js"></script>
+            <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+            <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+            <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+            <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+            <script src="../bower_components/firebase/firebase.js"></script>
+            <script src="../bower_components/angularfire/dist/angularfire.js"></script>
