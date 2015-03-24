@@ -18,7 +18,7 @@
                     <a ui-sref="closets({userId: main.user.$id, closetId: main.recent[0].$id})">
                     <div class="cta recent-cta"></div>
                         <div class="button-title-yellow">
-                            <h2 class="button-text">Recent Closet</h2>
+                            <h2 class="button-text">{{main[0].closetTitle}}</h2>
                         </div>
                     </a>
                 </li>
@@ -39,10 +39,10 @@
                     </a>
                 </li>
                 <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a ui-sref="favorites">
+                    <a ui-sref="#">
                     <div class="cta favorites-cta"></div>
                         <div class="button-title-red">
-                            <h2 class="button-text">Favorites</h2>
+                            <h2 class="text-coming-soon">Favorites</h2>
                         </div>
                     </a>
                 </li>

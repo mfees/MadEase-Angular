@@ -287,11 +287,21 @@ h3 {
 .button-title-red {
     margin-bottom: 2em;
     padding: 1em;
-    background-color: #e45d5d;
+    background-color: #7a3b3c;
 }
 
 .button-text {
     color: #fff;
+    font-size: 2ex;
+    font-family: "Montserrat" sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 0.5ex;
+    text-transform: uppercase;
+}
+
+.text-coming-soon {
+    color: #999;
     font-size: 2ex;
     font-family: "Montserrat" sans-serif;
     font-weight: lighter;
@@ -337,11 +347,11 @@ h3 {
     background-image: url(../assets/images/favorite-icon.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #e66c6c;
+    background-color: #7a3b3c;
 }
 
 .favorites-cta:hover {
-    background-color: #e45d5d;
+    background-color: #5c2b2b;
 }
 
 #page-footer {
