@@ -17,7 +17,7 @@
 </form>
 <hr>
 <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="pants in pants.pants">
+    <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="pants in pants.pantsImages | reverse">
         <a href="#" class="img-thumbnail">
             <img ng-src="{{pants.image}}" alt="...">
         </a>

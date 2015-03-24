@@ -29,7 +29,7 @@ var app = angular.module('madEase')
     console.log(self.user);
     this.ref = new Firebase('https://madease.firebaseio.com/closets/' + self.user.$id + '/' + $stateParams.closetId + '/content/pants');
     this.pants = $firebaseObject(this.ref);  
-       
+    this.pantsImages = $firebaseArray(this.ref);   
       
     this.pants.$loaded().then(function(data, key){
           console.log(data.pants)

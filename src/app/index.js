@@ -68,6 +68,12 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
     $urlRouterProvider.otherwise('/login');
   })
 
+.filter('reverse', function() {
+    return function(items) {
+    return items.slice().reverse();
+  };
+})
+    
 .factory('Auth', function($firebaseObject, $state){
     var auth = new Firebase('https://madease.firebaseio.com');
     var currentUser = {};

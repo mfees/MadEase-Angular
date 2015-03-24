@@ -17,7 +17,7 @@
 </form>
 <hr>
 <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="accessories in accessories.accessories">
+    <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="accessories in accessories.accessoriesImages | reverse">
         <a href="#" class="img-thumbnail">
             <img ng-src="{{accessories.image}}" alt="...">
         </a>
