@@ -6,7 +6,7 @@ var app = angular.module('madEase')
     Auth.onAuth(function(user, authdUser){
         self.user = user;
         
-    });  
+    });   
     
 //    document.getElementById("upload_widget_opener").addEventListener("click", function() {
 //

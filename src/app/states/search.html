@@ -8,7 +8,7 @@
 <!--        ng-repeat="closet in closet.closets"-->
         <!-- ui-sref="closets.whateverform({closetId: closet.$id})" -->
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="closets in search.search">
+            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="closets in search.search | reverse">
                 <a ui-sref="closets({userId: search.user.$id, closetId: closets.$id})" class="thumbnail">
                     <h3 class="search-title">{{closets.closetTitle}}</h3>
 <!--                    <img src="../assets/images/default-closet.png" alt="..." class="default-pic">-->
@@ -16,7 +16,7 @@
                 
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
-                <a ui-sref="add-closet" class="add-closet-btn thumbnail">
+                <a ui-sref="add" class="add-closet-btn thumbnail">
 <!--                    <img src="../assets/images/add-closet.png" alt="...">-->
                 </a>
             </div>

@@ -15,5 +15,11 @@ var app = angular.module('madEase')
       })
     
       console.log(this.search);
-        
+    
+    app.filter('reverse', function() {
+        return function(items) {
+        return items.slice().reverse();
+      };
+    });  
+      
 });
