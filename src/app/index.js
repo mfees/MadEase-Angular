@@ -65,7 +65,7 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
         controllerAs: 'login'
     })
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/login');
   })
 
 .factory('Auth', function($firebaseObject, $state){

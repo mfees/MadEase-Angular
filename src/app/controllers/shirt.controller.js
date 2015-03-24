@@ -14,7 +14,7 @@ var app = angular.module('madEase')
         image: ""
     };
       
-    document.getElementById("upload_widget_opener").addEventListener("click", function() {
+    document.getElementById("upload_widget_shirt").addEventListener("click", function() {
 
     cloudinary.openUploadWidget({
         cloud_name: 'madease', upload_preset: 'ejxt3qdf'
