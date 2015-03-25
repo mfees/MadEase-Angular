@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         
-        <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
         <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
         <link rel="stylesheet" href="app/vendor.css">
         <!-- bower:css -->
@@ -26,20 +26,13 @@
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header ng-include="'components/navbar/navbar.html'"></header>
-        <div id="main-container">
-<!--
-            <nav class="mobile-nav">
-                <a ui-sref="home"><img class="device-logo" src="./assets/images/logo.png"/></a>
-                <p>Welcome Back, {{main.user.firstName}}!</p>
-            </nav>
-            <div class="line"></div>
--->
-            <div ui-view></div>
-            <div class="line"></div>
-            <footer id="page-footer">
-                <p class="copyright">© 2015 | A Maddie Fees Creation</p>
-            </footer>
-        </div>
+            <div id="main-container">
+                <div ui-view></div>
+                <div class="line"></div>
+                <footer id="page-footer">
+                    <p class="copyright">© 2015 | A Maddie Fees Creation</p>
+                </footer>
+            </div>
             <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
             <script>
               (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

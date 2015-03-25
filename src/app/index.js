@@ -55,8 +55,6 @@ angular.module('madEase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'u
         .state('favorites', {
         url: '/favorites',
         templateUrl: 'app/states/favorites.html'
-//        controller: 'MainCtrl',
-//        controllerAs: 'main'
     })
         .state('login', {
         url: '/login',
