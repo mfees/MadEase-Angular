@@ -5,8 +5,8 @@
 </section>
 <section class="text-container">
     <div class="secondary-text-container">
-        <section class="text-area">
-            <h1>Hello, Beautiful!</h1>
+        <section class="text-area" ng-controller="NavCtrl as nav">
+            <h1><img class="user-pic" ng-src="{{nav.user.avatarUrl}}"/> Hello, {{nav.user.firstName}}!</h1>
             <div class="line-decoration">
                 <img src="./assets/images/line-decoration.png">
             </div>
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a ui-sref="favorites">
+                    <a ui-sref="#">
                     <div class="cta favorites-cta"></div>
                         <div class="button-title-red">
                             <h2 class="text-coming-soon">Favorites</h2>

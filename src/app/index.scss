@@ -75,15 +75,14 @@
 
 .user-info-position {
     position: absolute;
-    padding-right: 3em;
+    padding-right: 1em;
     top: 2%;
     right: 0;
 }
 
 .user-pic {
-    width: 40%;
-    margin: 0 auto 0.5em auto;
-    display: block;
+    width: 1em;
+    display: inline;
 }
 
 .user-info {
@@ -159,7 +158,7 @@ a:hover, a:focus {
 }
 
 .device-logo {
-    width: 35%;
+    width: 13em;
     padding: 1em;
     margin: 0 auto;
     display: block;
@@ -198,7 +197,7 @@ a:hover, a:focus {
 
 h1 {
     color: #2e1911;
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -254,7 +253,7 @@ h3 {
 .secondary-text-container {
     background-color: #fff;
     width: 87%;
-    padding: 2em 2em 0 2em;
+    padding: 1em 2em 0 2em;
     margin: 0 auto;
 }
 
@@ -536,15 +535,11 @@ a.add-closet:hover, a.add-closet:focus, a.add-closet.active {
     
 //Media Queries
 
-@media screen and (min-width: 600px) {
-    .device-logo {
-        width: 20%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .device-logo {
-        width: 15%;
+@media screen and (max-width: 450px) {
+    .user-pic {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 0.5em;
     }
 }
 
