@@ -127,15 +127,15 @@
     margin-top: 2em;
 }
 
-.submit-container > button {
-    float: right;
-}
-
 .submit-container > a {
 }
 
 .submit-container:hover > a {
     cursor: pointer;
+}
+
+.submit-container img {
+    width: 20%;
 }
 
 .secondary-text-container-login {
@@ -159,7 +159,7 @@ a:hover, a:focus {
 }
 
 .device-logo {
-    width: 25%;
+    width: 35%;
     padding: 1em;
     margin: 0 auto;
     display: block;
@@ -536,28 +536,18 @@ a.add-closet:hover, a.add-closet:focus, a.add-closet.active {
     
 //Media Queries
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .device-logo {
         width: 20%;
     }
-//    .banner {
-//        height: 23em;
-//    }
 }
 
 @media screen and (min-width: 1024px) {
     .device-logo {
         width: 15%;
     }
-//    .banner {
-//        height: 27em;
-//    }
 }
-//
-//@media screen and (min-width: 1400px) {
-//    .device-logo {
-//        width: 18%;
-//    }
-//}
+
+
 // injector
 // endinjector
