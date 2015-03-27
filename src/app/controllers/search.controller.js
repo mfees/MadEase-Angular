@@ -14,6 +14,6 @@ var app = angular.module('madEase')
           console.log(data)
       })
     
-      console.log(this.search);
-        
+      console.log(this.search); 
+      
 });

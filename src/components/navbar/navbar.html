@@ -1,11 +1,7 @@
 <nav class="mobile-nav" ng-controller="NavCtrl as nav">
     <a ui-sref="home"><img class="device-logo" src="./assets/images/logo.png"/></a>
-<!--    <div class="user-info-container">-->
-        <div class="user-info-position" ng-hide="nav.user == null">
-            <img class="user-pic" ng-src="{{nav.user.avatarUrl}}"/>
-            <p class="user-info">Hey {{nav.user.firstName}}!</p>
-            <button type="button" class="btn btn-danger logout-btn" ng-click="nav.logout()">Logout</button>
-        </div>
-<!--    </div>    -->
+    <div class="user-info-position" ng-hide="nav.user == null">
+        <button type="button" class="btn btn-danger logout-btn" ng-click="nav.logout()">Logout</button>
+    </div>
 </nav>
 <div class="line"></div>

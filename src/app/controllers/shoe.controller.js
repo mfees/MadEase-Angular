@@ -14,7 +14,7 @@ var app = angular.module('madEase')
         image: ""
     };
       
-    document.getElementById("upload_widget_opener").addEventListener("click", function() {
+    document.getElementById("upload_widget_shoes").addEventListener("click", function() {
 
     cloudinary.openUploadWidget({
         cloud_name: 'madease', upload_preset: 'ejxt3qdf'
@@ -28,7 +28,8 @@ var app = angular.module('madEase')
       
     console.log(self.user);
     this.ref = new Firebase('https://madease.firebaseio.com/closets/' + self.user.$id + '/' + $stateParams.closetId + '/content/shoes');
-    this.shoes = $firebaseObject(this.ref);  
+    this.shoes = $firebaseObject(this.ref); 
+    this.shoesImages = $firebaseArray(this.ref);  
        
       
     this.shoes.$loaded().then(function(data, key){

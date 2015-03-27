@@ -1,6 +1,3 @@
-// grey: #676767;
-// brown: #2e1911;
-
 //Global Styles
 
 .btn {
@@ -75,15 +72,14 @@
 
 .user-info-position {
     position: absolute;
-    padding-right: 3em;
+    padding-right: 1em;
     top: 2%;
     right: 0;
 }
 
 .user-pic {
-    width: 40%;
-    margin: 0 auto 0.5em auto;
-    display: block;
+    width: 1em;
+    display: inline;
 }
 
 .user-info {
@@ -127,15 +123,15 @@
     margin-top: 2em;
 }
 
-.submit-container > button {
-    float: right;
-}
-
 .submit-container > a {
 }
 
 .submit-container:hover > a {
     cursor: pointer;
+}
+
+.submit-container img {
+    width: 14em;
 }
 
 .secondary-text-container-login {
@@ -159,20 +155,20 @@ a:hover, a:focus {
 }
 
 .device-logo {
-    width: 25%;
+    width: 13em;
     padding: 1em;
     margin: 0 auto;
     display: block;
 }
 
-.banner {
-    background-image: url(../assets/images/banner.jpg);
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    width: 100%;
-    height: 18em;
-}
+//.banner {
+//    background-image: url(../assets/images/banner.jpg);
+//    background-size: cover;
+//    background-position-x: 50%;
+//    background-position-y: 50%;
+//    width: 100%;
+//    height: 15em;
+//}
 
 .tagline {
     height: 3em;
@@ -198,7 +194,7 @@ a:hover, a:focus {
 
 h1 {
     color: #2e1911;
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -207,13 +203,30 @@ h1 {
 }
 
 h3 {
-    color: #2e1911;
+    color: #fff;
     font-size: 2.5ex;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     text-transform: uppercase;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+
+.shirt-bg {
+    background-color: #67abbe;
+}
+
+.pants-bg {
+    background-color: #77bda5;
+}
+
+.shoes-bg {
+    background-color: #e66c6c;
+}
+
+.accessories-bg {
+    background-color: #e0c762;
 }
 
 .main-paragraph {
@@ -237,7 +250,7 @@ h3 {
 .secondary-text-container {
     background-color: #fff;
     width: 87%;
-    padding: 2em 2em 0 2em;
+    padding: 1em 2em 0 2em;
     margin: 0 auto;
 }
 
@@ -287,11 +300,21 @@ h3 {
 .button-title-red {
     margin-bottom: 2em;
     padding: 1em;
-    background-color: #e45d5d;
+    background-color: #7a3b3c;
 }
 
 .button-text {
     color: #fff;
+    font-size: 2ex;
+    font-family: "Montserrat" sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 0.5ex;
+    text-transform: uppercase;
+}
+
+.text-coming-soon {
+    color: #999;
     font-size: 2ex;
     font-family: "Montserrat" sans-serif;
     font-weight: lighter;
@@ -337,11 +360,7 @@ h3 {
     background-image: url(../assets/images/favorite-icon.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #e66c6c;
-}
-
-.favorites-cta:hover {
-    background-color: #e45d5d;
+    background-color: #7a3b3c;
 }
 
 #page-footer {
@@ -513,28 +532,14 @@ a.add-closet:hover, a.add-closet:focus, a.add-closet.active {
     
 //Media Queries
 
-@media screen and (min-width: 768px) {
-    .device-logo {
-        width: 20%;
-    }
-    .banner {
-        height: 23em;
+@media screen and (max-width: 450px) {
+    .user-pic {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 0.5em;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .device-logo {
-        width: 15%;
-    }
-    .banner {
-        height: 27em;
-    }
-}
-//
-//@media screen and (min-width: 1400px) {
-//    .device-logo {
-//        width: 18%;
-//    }
-//}
+
 // injector
 // endinjector
